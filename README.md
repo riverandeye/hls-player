@@ -1,6 +1,3 @@
-# 입맛대로 스타터
+# HLS Player
 
-- styled component
-- quill js
-- modal
-- GlobalStyle
+> 졸프 마무리하즈아
