@@ -17,7 +17,33 @@ const Watch: React.FC<RouteComponentProps<MatchParams>> = ({ match }) => {
     <Layout>
       <S.Watch>
         <S.WatchContainer>
-          {videoSrc ? <VideoPlayer src={videoSrc} /> : ""}
+          <S.VideoWrapper>
+            {videoSrc ? <VideoPlayer src={videoSrc} /> : ""}
+          </S.VideoWrapper>
+          <S.ChattingContainer>
+            <S.ChattingListContainer>
+              <S.ChattingMessage>관훈 : 안녕</S.ChattingMessage>
+              <S.ChattingMessage>관훈 : 안녕</S.ChattingMessage>
+              <S.ChattingMessage>관훈 : 안녕</S.ChattingMessage>
+              <S.ChattingMessage>관훈 : 안녕</S.ChattingMessage>
+              <S.ChattingMessage>관훈 : 안녕</S.ChattingMessage>
+              <S.ChattingMessage>관훈 : 안안녕</S.ChattingMessage>
+              <S.ChattingMessage>관훈 : 안녕</S.ChattingMessage>
+              <S.ChattingMessage>관훈 : 안녕</S.ChattingMessage>
+              <S.ChattingMessage>관훈 : 안녕</S.ChattingMessage>
+              <S.ChattingMessage>관훈 : 안녕</S.ChattingMessage>
+              <S.ChattingMessage>관훈 : 안녕</S.ChattingMessage>
+              <S.ChattingMessage>관훈 : 안녕</S.ChattingMessage>
+              <S.ChattingMessage>관훈 : 안안녕</S.ChattingMessage>
+              <S.ChattingMessage>관훈 : 안안녕</S.ChattingMessage>
+              <S.ChattingMessage>관훈 : 안안녕</S.ChattingMessage>
+              <S.ChattingMessage>관훈 : 안안녕</S.ChattingMessage>
+              <S.ChattingMessage>관훈 : 안안녕</S.ChattingMessage>
+            </S.ChattingListContainer>
+            <S.ChattingInputContainer>
+              <S.ChattingInput placeholder="메세지 입력하기..."></S.ChattingInput>
+            </S.ChattingInputContainer>
+          </S.ChattingContainer>
         </S.WatchContainer>
       </S.Watch>
     </Layout>
