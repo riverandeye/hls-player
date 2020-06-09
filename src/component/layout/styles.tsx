@@ -5,6 +5,11 @@ export const Layout = styled.div`
   min-height: 100%;
 `;
 
-export const Content = styled.div``;
+export const Content = styled.div`
+  width: 100%;
+  height: 100%;
+`;
 
-export const ContentContainer = styled.div``;
+export const ContentContainer = styled.div`
+  padding: 1rem;
+`;

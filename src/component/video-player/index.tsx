@@ -14,6 +14,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src }) => {
   useEffect(() => {
     const newPlayer = videojs(playerRef.current, {
       controls: true,
+      fluid: true,
       autoplay: true,
       muted: true,
       preload: "auto",
@@ -39,8 +40,12 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ src }) => {
   }, [player, src]);
 
   return (
-    <S.VideoPlayer data-vjs-player>
-      <S.Player ref={playerRef} className="video-js" playsInline />
+    <S.VideoPlayer vjs-fluid>
+      <S.Player
+        ref={playerRef}
+        className="video-js vjs-layout-small "
+        playsInline
+      />
     </S.VideoPlayer>
   );
 };
