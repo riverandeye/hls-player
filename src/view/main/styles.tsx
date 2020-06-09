@@ -17,10 +17,8 @@ export const MainContainer = styled.div`
 
 export const Description = styled.div`
   font-size: 2rem;
+  font-weight: 600;
   margin-bottom: 2rem;
-  @media only screen and (min-width: ${BREAKPOINT}px) {
-    font-weight: 600;
-  }
 `;
 
 export const StartProject = styled.div``;

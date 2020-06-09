@@ -1,13 +1,20 @@
 import React from "react";
-import { Route, BrowserRouter as Router } from "react-router-dom";
+import {
+  Route,
+  BrowserRouter as Router,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 
 import Main from "./view/main";
-import Layout from "./component/layout";
 
 function App() {
   return (
     <Router>
-      <Route path="/" exact component={Main} />
+      <Switch>
+        <Route path="/" exact component={Main} />
+        <Redirect from="*" to="/" />
+      </Switch>
     </Router>
   );
 }
