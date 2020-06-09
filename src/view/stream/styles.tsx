@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { BREAKPOINT } from "../../component/constant";
+import { BREAKPOINT } from "../../constant";
 
 export const Stream = styled.div``;
 

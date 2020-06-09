@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { THEME, BREAKPOINT } from "../constant";
+import { THEME, BREAKPOINT } from "../../constant";
 
 export const Header = styled.div`
   width: 100%;

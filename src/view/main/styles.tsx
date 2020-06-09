@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { BREAKPOINT, THEME } from "../../component/constant";
+import { BREAKPOINT, THEME } from "../../constant";
 
 export const Main = styled.div``;
 
