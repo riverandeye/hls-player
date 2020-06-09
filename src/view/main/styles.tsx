@@ -66,7 +66,7 @@ export const InputId = styled.input`
   }
 `;
 
-export const SubmitButton = styled.div`
+export const SubmitButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
