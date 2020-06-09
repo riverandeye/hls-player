@@ -1,40 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
+import { Route, BrowserRouter as Router } from "react-router-dom";
 
-import VideoPlayer from "./component/video-player";
+import Main from "./view/main";
+import Layout from "./component/layout";
 
 function App() {
-  const [path, setPath] = useState("");
-  const [input, setInput] = useState("");
-
-  const handleSubmit = () => {
-    if (!input) {
-      return;
-    }
-    setPath(input);
-  };
-
   return (
-    <div>
-      <div
-        style={{
-          margin: "1rem",
-          fontSize: "1.4rem",
-        }}
-      >
-        주소를 입력해주세요 :
-        <span
-          style={{
-            margin: "1rem",
-          }}
-        >
-          <input onChange={(e) => setInput(e.target.value)} />
-        </span>
-        <span>
-          <button onClick={handleSubmit}>입력</button>
-        </span>
-      </div>
-      {path ? <VideoPlayer src={path} /> : null}
-    </div>
+    <Router>
+      <Route path="/" exact component={Main} />
+    </Router>
   );
 }
 

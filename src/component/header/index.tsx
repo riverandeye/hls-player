@@ -2,14 +2,14 @@ import React from "react";
 
 import * as S from "./styles";
 
-interface HeaderProps {
-  toggleModal: () => void;
-}
+interface HeaderProps {}
 
-const Header: React.FC<HeaderProps> = ({ toggleModal }) => {
+const Header: React.FC<HeaderProps> = () => {
   return (
     <S.Header>
-      <S.HeaderContainer></S.HeaderContainer>
+      <S.HeaderContainer>
+        <S.Title>Free Live Streaming Platform</S.Title>
+      </S.HeaderContainer>
     </S.Header>
   );
 };

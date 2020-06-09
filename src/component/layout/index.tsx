@@ -5,14 +5,15 @@ import Header from "../header";
 
 interface LayoutProps {
   children?: React.ReactNode;
-  toggleModal: () => void;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, toggleModal }) => {
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <S.Layout>
-      <Header toggleModal={toggleModal} />
-      <S.LayoutContainer>{children}</S.LayoutContainer>
+      <Header />
+      <S.ContentContainer>
+        <S.Content>{children}</S.Content>
+      </S.ContentContainer>
     </S.Layout>
   );
 };
