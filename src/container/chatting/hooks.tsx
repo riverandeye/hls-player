@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Message from "../../common/model/message";
 
 import socketIOClient from "socket.io-client";
-const ENDPOINT = "http://localhost:4000/";
+const ENDPOINT = "http://localhost:4000";
 
 export const useChatting = (streamerId: string) => {
   const [user, setUser] = useState("");
@@ -13,13 +13,15 @@ export const useChatting = (streamerId: string) => {
 
   const scrollDown = (): void => {
     const target = document.getElementById(`scroll-${streamerId}`);
-    console.log(target);
     target.scrollTop = target.scrollHeight;
   };
 
   useEffect(() => {
     if (!socket) {
-      const socketClient = socketIOClient(ENDPOINT);
+      const socketClient = socketIOClient(ENDPOINT, {
+        path: process.env.REACT_APP_SOCKET_PATH,
+      });
+      console.log(socketClient.disconnected);
 
       setSocket(socketClient);
       return;
