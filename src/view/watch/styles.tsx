@@ -17,68 +17,10 @@ export const WatchContainer = styled.div`
 
 export const VideoWrapper = styled.div`
   width: 100%;
+  margin-bottom: 2rem;
 
   @media only screen and (min-width: ${BREAKPOINT}px) {
     width: 60%;
-  }
-`;
-
-export const ChattingContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-
-  @media only screen and (min-width: ${BREAKPOINT}px) {
-    width: 40%;
-    height: 40rem;
-    padding-top: 1rem;
-
-    margin-left: 2rem;
-    border: 1px solid ${THEME.BORDER};
-    border-radius: 1rem;
-  }
-`;
-
-export const ChattingListContainer = styled.div`
-  @media only screen and (min-width: ${BREAKPOINT}px) {
-    padding: 1rem;
-    overflow: scroll;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-`;
-
-export const ChattingMessageContainer = styled.div``;
-
-export const ChattingMessage = styled.div`
-  @media only screen and (min-width: ${BREAKPOINT}px) {
-    padding: 0.5rem;
-    font-size: 1.4rem;
-    font-weight: 500;
-  }
-`;
-
-export const ChattingInputContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media only screen and (min-width: ${BREAKPOINT}px) {
-    border-top: 1px solid ${THEME.PRIMARY};
-    margin-top: 1rem;
-
-    padding: 1rem;
-  }
-`;
-
-export const ChattingInput = styled.input`
-  @media only screen and (min-width: ${BREAKPOINT}px) {
-    height: 2.2rem;
-    border: none;
-    border-bottom: 1px solid black;
-
-    outline-color: ${THEME.BORDER};
+    margin-bottom: 0rem;
   }
 `;
