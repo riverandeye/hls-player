@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import Message from "../../common/model/message";
 
 import socketIOClient from "socket.io-client";
-const ENDPOINT = "http://localhost:4000";
 
 export const useChatting = (streamerId: string) => {
   const [user, setUser] = useState("");
@@ -18,7 +17,7 @@ export const useChatting = (streamerId: string) => {
 
   useEffect(() => {
     if (!socket) {
-      const socketClient = socketIOClient(ENDPOINT, {
+      const socketClient = socketIOClient(process.env.REACT_APP_SERVER, {
         path: process.env.REACT_APP_SOCKET_PATH,
       });
       console.log(socketClient.disconnected);
