@@ -1,0 +1,1 @@
+docker run -it --detach -p 4000:80 -p 1935:1935 hls-server:latest
